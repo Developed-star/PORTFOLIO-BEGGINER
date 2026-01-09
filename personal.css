@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    
+  background-color: rgb(10, 25, 47);
+  color: #CCD6F6;
+}
+.nav li{
+   list-style-type: none; 
+   display: inline;
+   padding: 12px;
+   flex-wrap: wrap;
+    
+}
+.nav a{
+    text-decoration: none;
+    color: #64FFDA;
+}
+/* .nav{
+    border: 2px solid ; 
+    
+} */
+.header{
+  background: var(--secondary);
+}
+a:hover{
+    color: white;
+}
+.aside{
+    float:left;
+    /* border: 4px solid; */
+    margin: 5px;
+    width: 30%;
+   display: flow-root;
+}
+aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.section{
+    float: right;
+    /* border: 2px solid; */
+    width: 67%;
+    margin: 4px;
+    margin-left: 26px;
+    padding: 3px;
+    height:auto ;
+     max-width: 100%;
+}
+.footer {
+  background-color: #112240; /* secondary */
+  color: #CCD6F6;            /* text */
+  text-align: center;
+  padding: 25px;
+}
+
+.footer a {
+  color: #64FFDA;           /* accent for links */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #E6F1FF;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .aside,
+  .section {
+    width: 100%;
+  }
+}
+.main {
+  display: flex;
+}
+footer img{
+    border-radius: 22px;
+    width: 64px;
+    height:55px;
+   
+}
+
+/* @media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}  media query hii mpaka utumie flex sio float katika aside na section na main*/
